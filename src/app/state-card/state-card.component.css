@@ -1,0 +1,67 @@
+.card-body {
+  background-color: #EEE;
+  border-radius: 20px;
+  margin: 25px;
+  /* padding: 20px; */
+  font-family: sans-serif;
+}
+
+.mat-expansion-panel:not([class*=mat-elevation-z]) {
+  box-shadow: 0 5px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+.state-description-box {
+  padding-top: 20px;
+  height: 80px;
+  width: 100%;
+  border-top: solid 1px #CCC;
+  display:grid;
+  grid-template-columns: 50% 50%;
+  grid-row: auto auto;
+    .box{
+      padding:10px;
+      border-radius:10px;
+      color:#fff;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      font-size:40px;
+    }
+}
+
+.field-label {
+  font-size: 18px;
+  font-weight: bold;
+  color: #444;
+}
+
+.field-desc {
+  font-size: 16px;
+  color: #444;
+}
+
+.detail-toggle-text {
+  text-decoration: underline;
+  color: #5c98d8;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.state-header {
+  font-size: 18px;
+  font-weight: bold;
+  color: #aaa;
+}
+
+.card-footer {
+  flex-direction: row;
+  text-align: end;
+}
+
+.detail-button {
+  height: 48px;
+  background-color: #7dafdc;
+  font-weight: bold;
+  color: #FFF;
+}

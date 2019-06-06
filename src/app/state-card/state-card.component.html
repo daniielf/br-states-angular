@@ -1,0 +1,36 @@
+<div class="card-body">
+  <mat-expansion-panel class="panel" #togglePanel disabled hideToggle="true">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <span class="state-header">{{ stateName.toUpperCase() }} - {{ stateInitial.toUpperCase() }}</span>
+      </mat-panel-title>
+      <span class="detail-toggle-text" (click)="toggleView()">{{ detailLinkText }}</span>
+    </mat-expansion-panel-header>
+    <div class="state-description-box">
+      <div class="box">
+        <span class="field-label">Name: </span>
+        <span class="field-desc">{{ stateName }}</span>
+      </div>
+
+      <div class="box">
+        <span class="field-label">Initial: </span>
+        <span class="field-desc">{{ stateInitial }}</span>
+      </div>
+
+      <div class="box">
+        <span class="field-label">Region: </span>
+        <span class="field-desc">{{ stateRegion }}</span>
+      </div>
+
+      <div class="box">
+        <span class="field-label">Region Initial: </span>
+        <span class="field-desc">{{ stateRegionInitial }}</span>
+      </div>
+    </div>
+    <div class="card-footer">
+      <button mat-button class="detail-button" (click)="openDialog()">
+        VIEW MORE
+      </button>
+    </div>
+  </mat-expansion-panel>
+</div>
