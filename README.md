@@ -13,7 +13,7 @@ Project Requirements:
 
  Use Guide:
  - Clone Project: 'git clone https://github.com/daniielf/br-states-angular.git'
- - Open project folder: 'cd <path-to-project-directory>'
+ - Open project folder: 'cd [path-to-project-directory]'
  - Install project dependencies: 'npm install'
  - Run the project: 'ng serve'
  - Open your browser: 'http://localhost:4200'
