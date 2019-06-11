@@ -8,7 +8,7 @@ import { MatDialogRef } from '@angular/material/dialog';
 export class DialogAlertComponent {
   constructor(public dialogRef: MatDialogRef<DialogAlertComponent>) { }
 
-  cancel() {
+  public cancel(): void {
     this.dialogRef.close();
   }
 }

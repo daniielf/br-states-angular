@@ -7,7 +7,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { StateCardComponent } from './state-card/state-card.component';
@@ -28,7 +28,8 @@ import { DialogAlertComponent } from './dialog-alert/dialog-alert.component';
     MatButtonModule,
     MatDialogModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   entryComponents: [DialogAlertComponent],
   providers: [StatesService],

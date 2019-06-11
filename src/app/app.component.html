@@ -2,8 +2,8 @@
 <body class="test">
   <div class="header">
     <span class="title">{{ pageTitle }}</span>
-    <form class="search-box">
-      <input class="input-field" [(ngModel)]="inputText" [ngModelOptions]="{standalone: true}" />
+    <form class="search-box" role="form" [formGroup]="searchForm">
+      <input type="text" class="input-field" [formGroup]="searchForm" name="searchText" formControlName="searchText" />
       <button class="button-search" type="submit" (click)="searchState()">
         <img  class="search-icon" src="https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-512.png"/>
       </button>

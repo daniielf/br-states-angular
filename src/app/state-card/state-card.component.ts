@@ -1,7 +1,6 @@
 import { Component, OnInit, Input, ViewChild, Output, EventEmitter } from '@angular/core';
 import { MatExpansionPanel } from '@angular/material/expansion';
 
-
 @Component({
   selector: 'state-card',
   templateUrl: './state-card.component.html',
@@ -16,29 +15,32 @@ export class StateCardComponent implements OnInit {
 
   @ViewChild('togglePanel', { read: false, static: true }) panel: MatExpansionPanel;
 
-  public detailLinkText = 'View more Details';
+  public detailLinkText: string = 'View more Details';
   constructor() { }
 
   ngOnInit() {
   }
 
   ngAfterViewInit() {
-
   }
 
-  toggleView() {
+  public toggleView(): void {
     this.panel.disabled = false;
-    if (this.panel.expanded) {
-      this.panel.close();
-      this.detailLinkText = 'View more Details';
-    } else {
-      this.panel.open();
-      this.detailLinkText = 'View less Details';
-    }
+    this.panel.expanded ? this.closePanel() : this.openPanel();
     this.panel.disabled = true;
   }
 
-  openDialog() {
+  public openPanel(): void {
+    this.panel.open();
+    this.detailLinkText = 'View less Details';
+  }
+
+  public closePanel(): void {
+    this.panel.close();
+    this.detailLinkText = 'View more Details';
+  }
+
+  public openDialog(): void {
     this.dialog.emit();
   }
 
